@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17131f">
+<title>Catálogo de Perfumes</title>
+<style>
+:root{--bg:#100e15;--panel:#1d1925;--gold:#d9b875;--text:#f8f4ee;--muted:#c5bacb;--line:#393142}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#21182a,#100e15 55%);color:var(--text);font:16px/1.55 Arial,sans-serif}
+header{padding:54px 20px 38px;text-align:center;background:radial-gradient(ellipse at top,#49334e,transparent 70%)}
+.kicker{color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:.75rem}
+h1{font-family:Georgia,serif;font-size:clamp(2.1rem,7vw,4rem);font-weight:400;margin:10px 0}
+header p{color:var(--muted);max-width:620px;margin:0 auto}
+main{max-width:1100px;margin:auto;padding:22px 16px 110px}
+.notice{border:1px solid var(--line);background:#1b1721;padding:14px 16px;border-radius:14px;color:var(--muted);font-size:.92rem;margin:10px 0 24px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+nav a,.pill{border:1px solid var(--line);border-radius:999px;padding:8px 14px;color:var(--gold);text-decoration:none;font-size:.9rem}
+section{margin:34px 0}h2{font:400 1.8rem Georgia,serif;color:var(--gold);margin-bottom:6px}
+h3{font-size:1.05rem;margin:0 0 12px;color:var(--text)}
+.sub{color:var(--muted);margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.card{background:linear-gradient(145deg,#25202d,#191620);border:1px solid var(--line);border-radius:15px;padding:15px}
+.card p{margin:5px 0;color:var(--muted);font-size:.9rem}
+.price{font-size:1.25rem;color:var(--gold);font-weight:700;margin-top:10px}
+.old{font-size:.8rem;color:#9e93a5;text-decoration:line-through;font-weight:400;margin-left:6px}
+.tag{display:inline-block;border-radius:6px;background:#392b1d;color:#f0c98a;padding:2px 7px;font-size:.72rem;margin-top:7px}
+.small{font-size:.85rem;color:var(--muted)}
+footer{text-align:center;padding:35px 15px;color:var(--muted);border-top:1px solid var(--line)}
+.cta{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#1f9d61;color:white;text-decoration:none;font-weight:bold;padding:14px 22px;border-radius:999px;box-shadow:0 8px 30px #0009;white-space:nowrap}
+@media(max-width:480px){main{padding-left:13px;padding-right:13px}.card{padding:13px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="kicker">Seleção especial</div>
+ <h1>Catálogo de Perfumes</h1>
+ <p>Encontre sua fragrância. Consulte disponibilidade e faça seu pedido diretamente pelo WhatsApp.</p>
+</header>
+<main>
+ <div class="notice"><strong>Preços atualizados:</strong> valores calculados com acréscimo de 30% sobre os preços do catálogo original. A disponibilidade deve ser confirmada antes do pedido.</div>
+ <nav><a href="#femininos">Femininos</a><a href="#masculinos">Masculinos</a><a href="#contato">Como pedir</a></nav>
+
+ <section id="femininos">
+  <h2>Perfumes femininos</h2>
+  <p class="sub">Miniaturas 25 ml</p>
+  <div class="grid">
+   <article class="card"><h3>Seleção feminina – linha regular</h3><p>Consulte os modelos disponíveis do catálogo original.</p><div class="price">R$ 48,10 <span class="old">R$ 37,00</span></div></article>
+   <article class="card"><h3>Seleção feminina – linha especial</h3><p>Modelos identificados no catálogo com preço-base intermediário.</p><div class="price">R$ 53,30 <span class="old">R$ 41,00</span></div></article>
+   <article class="card"><h3>Seleção feminina – linha premium</h3><p>Modelos identificados no catálogo com preço-base premium.</p><div class="price">R$ 62,40 <span class="old">R$ 48,00</span></div></article>
+  </div>
+  <p class="sub" style="margin-top:24px">Frascos grandes – 80/100 ml</p>
+  <div class="grid">
+   <article class="card"><h3>Perfumes femininos – 80/100 ml</h3><p>Modelos da seleção feminina em frasco grande.</p><div class="price">R$ 130,00 <span class="old">R$ 100,00</span></div></article>
+   <article class="card"><h3>La Bomba – 80/100 ml</h3><p>Preço-base especial indicado no catálogo.</p><div class="price">R$ 175,50 <span class="old">R$ 135,00</span></div></article>
+  </div>
+ </section>
+
+ <section id="masculinos">
+  <h2>Perfumes masculinos</h2>
+  <p class="sub">Miniaturas 25 ml</p>
+  <div class="grid">
+   <article class="card"><h3>Seleção masculina – linha regular</h3><p>Consulte os modelos disponíveis do catálogo original.</p><div class="price">R$ 48,10 <span class="old">R$ 37,00</span></div></article>
+   <article class="card"><h3>Bad Boy – miniaturas 25 ml</h3><p>Preço-base especial indicado no catálogo.</p><div class="price">R$ 62,40 <span class="old">R$ 48,00</span></div></article>
+  </div>
+  <p class="sub" style="margin-top:24px">Frascos grandes – 80/100 ml</p>
+  <div class="grid">
+   <article class="card"><h3>Perfumes masculinos – 80/100 ml</h3><p>Modelos da seleção masculina em frasco grande.</p><div class="price">R$ 130,00 <span class="old">R$ 100,00</span></div></article>
+  </div>
+ </section>
+
+ <section id="contato">
+  <h2>Como fazer seu pedido</h2>
+  <div class="card">
+   <p>Toque no botão do WhatsApp e informe o nome ou código do perfume desejado. A mensagem automática identifica que você veio pelo catálogo online.</p>
+   <p class="small">WhatsApp: (31) 9****-**50</p>
+  </div>
+ </section>
+</main>
+<footer>Catálogo de Perfumes · Consulte disponibilidade antes de concluir o pedido.</footer>
+<a class="cta" href="https://wa.me/5531985854150?text=Ol%C3%A1%21%20Encontrei%20seu%20contato%20pelo%20cat%C3%A1logo%20online%20de%20perfumes.%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20um%20produto." target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
+</body>
+</html>
